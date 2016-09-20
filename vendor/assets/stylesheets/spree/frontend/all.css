@@ -12,3 +12,47 @@
  *= require spree/frontend/spree_social
  *= require spree/frontend/spree_reviews
 */
+.top {
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+.navbar-form {
+    float: right;
+    margin: 20px auto !important;
+    padding: 10px 15px;
+}
+.intro{
+  padding-top: 15px;
+}
+#spree-header #header {
+    background: #fff !important;
+    padding: 0 !important;
+}
+#link-to-cart{
+  margin-top: 20px;
+
+}
+#link-to-cart a {
+    color: #333 !important;
+
+}
+#link-to-cart a:hover{
+  background: none !important;
+  color:#970001 !important;
+
+}
+.btn-primary {
+    background-color: #970001 !important;
+    border-color: #970001 !important;
+    color: #fff;
+}
+.form-control:focus {
+    border-color: #970001 !important;
+    box-shadow: 0 1px 1px #970001 inset, 0 0 8px #970001 !important;
+    outline: 0 none;
+}
+#spree-header {
+    background: #970001 none repeat scroll 0 0 !important;
+    margin-bottom: 20px;
+}
