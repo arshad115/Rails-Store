@@ -11,11 +11,16 @@
  *= require spree/frontend/spree_wishlist
  *= require spree/frontend/spree_social
  *= require spree/frontend/spree_reviews
+ *= require font-awesome
 */
+
 .top {
     background: #000;
     color: #fff;
     text-align: center;
+}
+#spree-header #logo img {
+    padding-top: 10px;
 }
 .navbar-form {
     float: right;
@@ -54,5 +59,8 @@
 }
 #spree-header {
     background: #970001 none repeat scroll 0 0 !important;
-    margin-bottom: 20px;
+    margin-bottom: 0 !important;
+}
+.container-fluid {
+    padding: 0 !important;
 }

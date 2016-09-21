@@ -21,6 +21,7 @@ gem 'spree_related_products', github: 'spree-contrib/spree_related_products', br
 gem 'spree_slider', github: 'spree-contrib/spree_slider', branch: '3-1-stable'
 gem 'spree_reviews', github: 'spree-contrib/spree_reviews', branch: '3-1-stable'
 gem 'spree_editor', github: 'spree-contrib/spree_editor', branch: '3-1-stable'
+gem "font-awesome-rails"
 
 
 
