@@ -64,3 +64,35 @@
 .container-fluid {
     padding: 0 !important;
 }
+.list-group-item:hover {
+    background: none !important;
+    color: #970001 !important;
+}
+.list-group-item {
+    background-color: #fff;
+    border: medium none !important;
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 0 !important;
+    position: relative;
+    font-size: 16px;
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+
+    color:#970001 ;
+    z-index: 2;
+    background: none !important;
+}
+.sidebar-item h4 {
+    border-bottom: 1px solid #970001;
+    color: #970001;
+    padding-bottom: 10px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+#products{
+  padding-top: 20px !important;
+}
+.sidebar-item{
+  padding-top: 20px !important;
+}
