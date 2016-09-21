@@ -13,14 +13,17 @@
 
     <div class="container-fluid">
       <div class="row" data-hook>
+
         <%= breadcrumbs(@taxon) %>
-
+        <% if !current_page?(root_path) %>
+        <div class="container">
         <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
-
+        <% end %>
         <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
           <%= flash_messages %>
           <%= yield %>
         </div>
+      </div>
 
         <%= yield :templates %>
       </div>
