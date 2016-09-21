@@ -59,6 +59,14 @@ GIT
       spree_core (~> 3.1.0.beta)
 
 GIT
+  remote: git://github.com/spree-contrib/spree_static_content.git
+  revision: 818c9ecb65df2e845a40ca8d2053b2c7be2a2d75
+  branch: master
+  specs:
+    spree_static_content (3.2.0.alpha)
+      spree_core (>= 3.1.0, < 4.0)
+
+GIT
   remote: git://github.com/spree-contrib/spree_wishlist.git
   revision: 665f1f72dcecbc26dbe62be5a464ade4339242fb
   branch: master
@@ -456,6 +464,7 @@ DEPENDENCIES
   spree_reviews!
   spree_slider!
   spree_social!
+  spree_static_content!
   spree_wishlist!
   spring
   turbolinks

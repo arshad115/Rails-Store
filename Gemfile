@@ -22,7 +22,7 @@ gem 'spree_slider', github: 'spree-contrib/spree_slider', branch: '3-1-stable'
 gem 'spree_reviews', github: 'spree-contrib/spree_reviews', branch: '3-1-stable'
 gem 'spree_editor', github: 'spree-contrib/spree_editor', branch: '3-1-stable'
 gem "font-awesome-rails"
-
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch: 'master'
 
 
 group :development, :test do

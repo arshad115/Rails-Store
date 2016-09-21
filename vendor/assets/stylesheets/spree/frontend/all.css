@@ -12,8 +12,18 @@
  *= require spree/frontend/spree_social
  *= require spree/frontend/spree_reviews
  *= require font-awesome
+ *= require spree/frontend/spree_static_content
 */
+body {
 
+    font-family: "Lato",sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.42857 !important;
+}
+.product-body a {
+    color: #970001 !important;
+    font-size: 18px;
+}
 .top {
     background: #000;
     color: #fff;
@@ -95,4 +105,13 @@
 }
 .sidebar-item{
   padding-top: 20px !important;
+}
+.product-body {
+    height: 300px !important;
+}
+.panel-body {
+    padding: 0 !important;
+}
+.q{
+  width:120px !important;
 }
