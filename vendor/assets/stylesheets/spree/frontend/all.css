@@ -115,3 +115,20 @@ body {
 .q{
   width:120px !important;
 }
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+    background-color: #970001 !important;
+    border-color: #970001 !important;
+    color: #fff !important;
+}
+.pagination > li > a, .pagination > li > span {
+    border: 1px solid #970001 !important;
+
+    color: #970001 !important;
+}
+#main-nav-bar li a:hover, #main-nav-bar li a:focus {
+    background: #fff !important;
+    color: #970001 !important;
+}
+#carousel-slider-468 {
+    display: none !important;
+}
