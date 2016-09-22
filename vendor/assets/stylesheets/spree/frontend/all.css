@@ -132,3 +132,101 @@ body {
 #carousel-slider-468 {
     display: none !important;
 }
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+    text-align: center !important;
+}
+.nav-tabs > li {
+    float: none !important;
+    display: inline-block;
+}
+.aa-browse-btn {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    padding: 12px 18px;
+    transition: all 0.5s ease 0s;
+}
+.aa-browse-btn span {
+    margin-left: 5px;
+}
+.aa-browse-btn:hover, .aa-browse-btn:focus {
+    background-color: #fff;
+}
+.aa-browse-btn {
+    background-color: #970001;
+    border: 1px solid #970001;
+}
+.aa-browse-btn:hover, .aa-browse-btn:focus {
+    color: #970001;
+}
+.ind{
+  text-align: center;
+}
+.welcome {
+    padding: 4em 0;
+}
+.welcome-left h2 {
+    color: #970001;
+    font-size: 2.5em;
+    font-family: georgia;
+}
+.welcome-right h3 {
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+}
+.welcome-right p {
+    color: #999;
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+.shoping {
+    background: #eee none repeat scroll 0 0;
+    padding: 2em 0;
+    margin: 50px 0px;
+}
+.shpng-grid {
+    text-align: center;
+}
+.shpng-grid h3 {
+    color: #333;
+    font-family: "JosefinSans-Bold";
+}
+.shpng-grid:nth-child(2) {
+    border-left: 2px solid rgba(51, 51, 51, 0.29);
+    border-right: 2px solid rgba(51, 51, 51, 0.29);
+}
+.shpng-grid p {
+    color: rgba(189, 0, 0, 0.8);
+    font-family: "JosefinSans-Light";
+    font-size: 1.6em;
+    padding-top: 5px;
+}
+.related{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+.none{display:none;}
+.details {
+    margin: 50px 0px;
+}
+.well {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border: medium none !important;
+    padding: 19px 0 !important;
+    box-shadow: none !important;
+}
+#product-price{
+  display: none !important;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #970001 !important;
+    color: #fff;
+}
+.btn-success {
+    background-color: #970001 !important;
+    border-color: #970001 !important;
+    color: #fff;
+}

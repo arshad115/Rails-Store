@@ -1,5 +1,18 @@
   <%= render partial: 'spree/shared/slider', locals: { slider: Spree::Slide.published, cid: 'dinar', interval: false } %>s
-<div class="container">
+
+  <div class="welcome">
+    <div class="container">
+      <div class="col-md-3 welcome-left">
+        <h2>Welcome to our store</h2>
+      </div>
+      <div class="col-md-9 welcome-right">
+        <h3>Proin ornare massa eu enim pretium efficitur.</h3>
+        <p>Etiam fermentum consectetur nulla, sit amet dapibus orci sollicitudin vel. Nulla consequat turpis in molestie fermentum. In ornare, tellus non interdum ultricies, elit ex lobortis ex, aliquet accumsan arcu tortor in leo. Nullam molestie elit enim. Donec ac aliquam quam, ac iaculis diam. Donec finibus scelerisque erat, non convallis felis commodo ac.</p>
+        </div>
+    </div>
+  </div>
+
+<div class="container ind">
 
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Featured</a></li>
@@ -19,13 +32,43 @@
         <% cache(cache_key_for_products) do %>
           <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @products } %>
         <% end %>
-      </div></div>
+      </div>
+    </div>
     <div id="menu2" class="tab-pane fade">
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <div data-hook="">
+        <% cache(cache_key_for_products) do %>
+          <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productsp } %>
+        <% end %>
+      </div>
     </div>
 
  </div>
+ <a class="aa-browse-btn" href="/products">
+ Browse all Product
+ <span class="fa fa-long-arrow-right"></span>
+ </a>
+
+ <div class="shoping">
+   <div class="container">
+     <div class="shpng-grids">
+       <div class="col-md-4 shpng-grid">
+         <h3>Free Shipping</h3>
+         <p>On Order Over $ 200</p>
+       </div>
+       <div class="col-md-4 shpng-grid">
+         <h3>Order Return</h3>
+         <p>Return Within 14days</p>
+       </div>
+       <div class="col-md-4 shpng-grid">
+         <h3>COD</h3>
+         <p>Cash On Delivery</p>
+       </div>
+       <div class="clearfix"></div>
+     </div>
+   </div>
+ </div>
+
+
 
     <ul class="nav nav-tabs">
       <li class="active"><a data-toggle="tab" href="#bag">Bags</a></li>
@@ -37,24 +80,33 @@
       <div id="bag" class="tab-pane fade in active">
         <div data-hook="">
           <% cache(cache_key_for_products) do %>
-            <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @products1 } %>
+            <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productsb } %>
           <% end %>
         </div>
       </div>
       <div id="mugs" class="tab-pane fade">
         <div data-hook="">
           <% cache(cache_key_for_products) do %>
-            <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @products } %>
+            <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productsm } %>
           <% end %>
-        </div></div>
-      <div id="clothing" class="tab-pane fade">
-        <h3>Menu 2</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
       </div>
       <div id="clothing" class="tab-pane fade">
-        <h3>Menu 2</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        <div data-hook="">
+          <% cache(cache_key_for_products) do %>
+            <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productsc } %>
+          <% end %>
+        </div>
       </div>
-
-
+      <div id="clothing" class="tab-pane fade">
+        <div data-hook="">
+          <% cache(cache_key_for_products) do %>
+            <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productst } %>
+          <% end %>
+        </div>
+      </div>
   </div>
+  <a class="aa-browse-btn" href="/products">
+  Browse all Product
+  <span class="fa fa-long-arrow-right"></span>
+  </a>

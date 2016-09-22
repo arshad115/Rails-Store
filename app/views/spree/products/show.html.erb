@@ -14,11 +14,6 @@
             <%= render :partial => 'thumbnails' %>
           </div>
         </div>
-
-        <div data-hook="product_properties">
-          <%= render :partial => 'properties' %>
-        </div>
-
         <div data-hook="promotions">
           <%= render :partial => 'promotions' %>
         </div>
@@ -29,9 +24,10 @@
       <div data-hook="product_right_part_wrap">
         <div id="product-description" data-hook="product_description">
           <h1 class="product-title" itemprop="name"><%= @product.name %></h1>
-
+          <span class="lead price selling" itemprop="price">Price: <%= display_price(@product) %><br><br></span>
           <div class="well" itemprop="description" data-hook="description">
-            <%= product_description(@product) %>
+            <h3>Quick Overview</h3>
+            <%= truncate_html(@product.description, :length => 200) %>
           </div>
 
           <div id="cart-form" data-hook="cart_form">
@@ -39,11 +35,58 @@
           </div>
         </div>
 
-        <div id="taxon-crumbs" class=" five " data-hook="product_taxons">
-          <%= render :partial => 'taxons' %>
-        </div>
+
       </div>
     </div>
   </div>
+
+<div class="details container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#descriptions">Descriptions</a></li>
+    <li><a data-toggle="tab" href="#properties">properties</a></li>
+    <li><a data-toggle="tab" href="#reviews">Reviews</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="descriptions" class="tab-pane fade in active">
+      <div class="well" itemprop="description" data-hook="description">
+        <%= product_description(@product) %>
+      </div>
+    </div>
+    <div id="properties" class="tab-pane fade">
+      <div data-hook="">
+        <%= render :partial => 'properties' %>
+      </div>
+    </div>
+    <div id="reviews" class="tab-pane fade">
+      <div class="none" data-hook="product_properties">
+        <%= render :partial => 'properties' %>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+    <h3 class="related">Related Products</h3>
+      <% @product.relations.each do |relation| %>
+        <% related_product = Spree::Product.find_by_id( relation.related_to_id ) %>
+          <div id="product_<%= @product.id %>" class="col-md-3 col-sm-6 col-xs-6 product-list-item" data-hook="products_list_item" itemscope itemtype="https://schema.org/Product">
+            <div class="panel panel-default">
+             <div class="panel-body text-center product-body">
+              <%= link_to product_image(related_product), product_path(related_product) %>
+              <%= link_to related_product.name, product_path(related_product) %>
+            </div>
+          <div class="panel-footer text-center">
+            <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span class="price selling lead" itemprop="price"><%= display_price(related_product) %></span>
+              <%= render :partial => 'spree/products/quick_cart_form', locals: { product: related_product } %>
+            </span>
+          </div>
+          </div>
+          </div>
+      <% end %>
+
 <% end %>
+
 </div>

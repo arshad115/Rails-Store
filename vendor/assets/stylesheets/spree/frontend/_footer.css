@@ -6,9 +6,11 @@
 }
 
 #aa-subscribe {
-    display: inline;
-    float: left;
-    width: 100%;
+   background: #efefef none repeat scroll 0 0;
+   display: inline;
+   float: left;
+   margin-top: 50px;
+   width: 100%;
 }
 #aa-subscribe .aa-subscribe-area {
     display: inline;
