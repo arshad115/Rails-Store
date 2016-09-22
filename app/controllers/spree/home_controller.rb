@@ -27,5 +27,27 @@ module Spree
 
       @taxonomies = Spree::Taxonomy.includes(root: :children)
     end
+
+    def about
+    end
+
+    def terms
+    end
+
+    def privacy
+    end
+
+    def contact
+    end
+
+    def shipping
+    end
+
+    def refunds
+    end
+
+    def warranty
+    end
+
   end
 end
