@@ -70,42 +70,6 @@
 
 
 
-    <ul class="nav nav-tabs">
-      <li class="active"><a data-toggle="tab" href="#bag">Bags</a></li>
-      <li><a data-toggle="tab" href="#mugs">Mugs</a></li>
-      <li><a data-toggle="tab" href="#clothing">Clothing</a></li>
-      <li><a data-toggle="tab" href="#tshirts">T-Shirts</a></li>
-    </ul>
-    <div class="tab-content">
-      <div id="bag" class="tab-pane fade in active">
-        <div data-hook="">
-          <% cache(cache_key_for_products) do %>
-            <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productsb } %>
-          <% end %>
-        </div>
-      </div>
-      <div id="mugs" class="tab-pane fade">
-        <div data-hook="">
-          <% cache(cache_key_for_products) do %>
-            <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productsm } %>
-          <% end %>
-        </div>
-      </div>
-      <div id="clothing" class="tab-pane fade">
-        <div data-hook="">
-          <% cache(cache_key_for_products) do %>
-            <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productsc } %>
-          <% end %>
-        </div>
-      </div>
-      <div id="clothing" class="tab-pane fade">
-        <div data-hook="">
-          <% cache(cache_key_for_products) do %>
-            <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productst } %>
-          <% end %>
-        </div>
-      </div>
-  </div>
   <a class="aa-browse-btn" href="/products">
   Browse all Product
   <span class="fa fa-long-arrow-right"></span>
