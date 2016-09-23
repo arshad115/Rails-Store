@@ -23,6 +23,10 @@ gem 'spree_editor', github: 'spree-contrib/spree_editor', branch: '3-1-stable'
 gem "font-awesome-rails"
 gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch: 'master'
 gem 'spree_social_products', github: 'spree-contrib/spree_social_products', branch: 'master'
+gem 'spree_blogit'
+
+
+
 
 group :development do
   gem 'web-console', '~> 2.0'
