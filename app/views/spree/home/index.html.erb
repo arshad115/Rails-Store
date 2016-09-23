@@ -22,21 +22,21 @@
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
       <div data-hook="">
-        <% cache(cache_key_for_products) do %>
+        <% cache(cache_key_for_products, @products1) do %>
           <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @products1 } %>
         <% end %>
       </div>
     </div>
     <div id="menu1" class="tab-pane fade">
       <div data-hook="">
-        <% cache(cache_key_for_products) do %>
+        <% cache(cache_key_for_products, @products) do %>
           <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @products } %>
         <% end %>
       </div>
     </div>
     <div id="menu2" class="tab-pane fade">
       <div data-hook="">
-        <% cache(cache_key_for_products) do %>
+        <% cache(cache_key_for_products, @productsp) do %>
           <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productsp } %>
         <% end %>
       </div>
@@ -79,28 +79,28 @@
     <div class="tab-content">
       <div id="bag" class="tab-pane fade in active">
         <div data-hook="">
-          <% cache(cache_key_for_products) do %>
+          <% cache(cache_key_for_products, @productsb) do %>
             <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productsb } %>
           <% end %>
         </div>
       </div>
       <div id="mugs" class="tab-pane fade">
         <div data-hook="">
-          <% cache(cache_key_for_products) do %>
+          <% cache(cache_key_for_products, @productsm) do %>
             <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productsm } %>
           <% end %>
         </div>
       </div>
       <div id="clothing" class="tab-pane fade">
         <div data-hook="">
-          <% cache(cache_key_for_products) do %>
+          <% cache(cache_key_for_products, @productsc) do %>
             <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productsc } %>
           <% end %>
         </div>
       </div>
       <div id="clothing" class="tab-pane fade">
         <div data-hook="">
-          <% cache(cache_key_for_products) do %>
+          <% cache(cache_key_for_products, @productst) do %>
             <%= render :partial => 'spree/shared/latest_products', :locals => { :products => @productst } %>
           <% end %>
         </div>
