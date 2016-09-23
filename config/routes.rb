@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   Spree::Core::Engine.routes.draw do
     get "/about" => "home#about"
     get "/terms" => "home#terms"
-    get "/terms" => "home#privacy"
-    get "/terms" => "home#contact"
+    get "/privacy" => "home#privacy"
+    
   end
 end
