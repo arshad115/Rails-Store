@@ -37,17 +37,6 @@ module Spree
     def privacy
     end
 
-    def contact
-    end
-
-    def shipping
-    end
-
-    def refunds
-    end
-
-    def warranty
-    end
 
   end
 end

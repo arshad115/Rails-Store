@@ -13,6 +13,7 @@
  *= require spree/frontend/spree_reviews
  *= require font-awesome
  *= require spree/frontend/spree_static_content
+ *= require spree/frontend/spree_social_products
 */
 body {
 
@@ -71,8 +72,12 @@ body {
     background: #970001 none repeat scroll 0 0 !important;
     margin-bottom: 0 !important;
 }
-.container-fluid {
-    
+.container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.row {
+    margin: 0 !important;
 }
 .list-group-item:hover {
     background: none !important;
@@ -229,4 +234,8 @@ body {
     background-color: #970001 !important;
     border-color: #970001 !important;
     color: #fff;
+}
+#social_nav {
+    height: 130px !important;
+    padding-top: 15px;
 }
