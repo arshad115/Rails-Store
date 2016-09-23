@@ -118,7 +118,7 @@ body {
     padding: 0 !important;
 }
 .q{
-  width:120px !important;
+  width:90px !important;
 }
 .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
     background-color: #970001 !important;
